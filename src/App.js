@@ -9,7 +9,7 @@ const App = () => {
     const getBuilders = async () => {
       try {
         // 백엔드 API에서 데이터 가져오기
-        const response = await axios.get('http://localhost:8080/api/builder'); // 백엔드 URL
+        const response = await axios.get('https://w24w16backendhomework.onrender.com/api/builder');
         setBuilders(response.data); // 받아온 데이터로 상태 업데이트
       } catch (error) {
         console.error("Error fetching builders data:", error);
